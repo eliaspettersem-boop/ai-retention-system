@@ -3,40 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Retention System for Shopify</title>
-  <meta name="description" content="Recover 10–25% more revenue from your Shopify store in 14 days with a done-for-you AI retention system. No calls. Fixed price." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>RetentionOps — Backend Revenue Systems for Shopify</title>
+  <meta name="description" content="Recover 10–25% more revenue from your Shopify store in 14 days with a done-for-you retention system. No calls. Fixed price." />
+
+  <style>
+    :root {
+      --bg-main: #ffffff;
+      --bg-muted: #f8fafc;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-light: #e5e7eb;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI",
+        system-ui, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    header .container {
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      font-weight: 650;
+      letter-spacing: -0.015em;
+      margin-bottom: 24px;
+    }
+
+    p {
+      color: var(--text-muted);
+      max-width: 760px;
+    }
+
+    .subheadline {
+      font-size: 1.15rem;
+      margin-bottom: 32px;
+    }
+
+    .hero-points {
+      list-style: none;
+      margin-bottom: 40px;
+    }
+
+    .hero-points li {
+      margin: 8px 0;
+    }
+
+    .section {
+      background: var(--bg-main);
+    }
+
+    .section.alt {
+      background: var(--bg-muted);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .list {
+      list-style: none;
+      margin: 24px 0;
+    }
+
+    .list li {
+      padding-left: 18px;
+      margin: 12px 0;
+      position: relative;
+    }
+
+    .list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .steps {
+      margin-left: 20px;
+    }
+
+    .steps li {
+      margin: 14px 0;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #ffffff;
+      padding: 14px 34px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+    }
+
+    .pricing {
+      text-align: center;
+    }
+
+    .price-box {
+      max-width: 420px;
+      margin: 0 auto;
+      border: 1px solid var(--border-light);
+      border-radius: 14px;
+      padding: 48px 32px;
+      background: #ffffff;
+    }
+
+    .price {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-light);
+      text-align: center;
+      padding: 48px 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
 
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <strong>RetentionOps</strong><br />
+      <span style="font-size:14px;color:var(--text-muted);">
+        Backend Revenue Systems for Shopify
+      </span>
+    </div>
+  </header>
+
   <!-- HERO -->
-  <section class="hero">
+  <section class="section">
     <div class="container">
       <h1>Recover 10–25% More Revenue From Your Existing Shopify Traffic</h1>
       <p class="subheadline">
-        We install a complete AI-powered retention system in 7 days.
+        We install a complete retention system in 7 days.
         No ads. No calls. No ongoing management.
       </p>
+
       <ul class="hero-points">
         <li>✔ Works with your current traffic</li>
         <li>✔ Fixed scope, fixed price</li>
-        <li>✔ Revenue guarantee</li>
+        <li>✔ 14-day revenue guarantee</li>
       </ul>
+
       <a href="#pricing" class="btn-primary">Install the System</a>
     </div>
   </section>
 
   <!-- WHO IT'S FOR -->
-  <section class="section">
+  <section class="section alt">
     <div class="container">
       <h2>This Is For Shopify Brands That</h2>
       <ul class="list">
         <li>Do $20k+/month in revenue</li>
-        <li>Get traffic but lose money after the first visit</li>
+        <li>Get traffic but lose revenue after the first visit</li>
         <li>Use email or SMS but don’t have a real system</li>
         <li>Want backend revenue without meetings</li>
       </ul>
-
       <p class="note">
         Not for new stores, dropshipping tests, or brands looking for growth hacks.
       </p>
@@ -44,77 +217,71 @@
   </section>
 
   <!-- PROBLEM -->
-  <section class="section alt">
+  <section class="section">
     <div class="container">
       <h2>Most Shopify Stores Leak Revenue Every Day</h2>
       <ul class="list">
         <li>70%+ of carts are abandoned</li>
-        <li>Post-purchase emails are usually ineffective</li>
+        <li>Post-purchase emails rarely perform well</li>
         <li>Past customers are never reactivated</li>
         <li>Tools exist — but they’re not connected properly</li>
       </ul>
-      <p>
-        You already paid for traffic. This system makes sure you maximize it.
-      </p>
     </div>
   </section>
 
   <!-- SOLUTION -->
-  <section class="section">
+  <section class="section alt">
     <div class="container">
-      <h2>The AI Retention & Revenue System</h2>
-      <p>
-        This is a done-for-you backend system that automatically:
-      </p>
+      <h2>The Retention & Revenue System</h2>
       <ul class="list">
-        <li>Recovers abandoned carts</li>
-        <li>Increases repeat purchases</li>
-        <li>Reactivates inactive customers</li>
-        <li>Uses AI to personalize messaging</li>
+        <li>Abandoned cart recovery (email + SMS)</li>
+        <li>Post-purchase upsell flows</li>
+        <li>Win-back campaigns for inactive customers</li>
+        <li>Brand-trained messaging logic</li>
       </ul>
-      <p>
+      <p class="note">
         Installed once. Runs continuously.
       </p>
     </div>
   </section>
 
-  <!-- WHAT'S INCLUDED -->
-  <section class="section alt">
+  <!-- PROCESS -->
+  <section class="section">
     <div class="container">
-      <h2>What’s Included</h2>
+      <h2>Our Installation Process</h2>
       <ul class="list">
-        <li>Abandoned cart recovery (Email + SMS)</li>
-        <li>Post-purchase upsell flows</li>
-        <li>Win-back campaigns</li>
-        <li>AI-personalized messaging</li>
-        <li>Light AI support automation (FAQs + order status)</li>
-        <li>Revenue tracking snapshot</li>
+        <li>Access review & baseline snapshot</li>
+        <li>System installation & configuration</li>
+        <li>Quality assurance & testing</li>
+        <li>14-day monitoring period</li>
       </ul>
       <p class="note">
-        No custom work. No meetings. No endless revisions.
+        This is a standardized process used for every client.
       </p>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section">
+  <!-- SECURITY -->
+  <section class="section alt">
     <div class="container">
-      <h2>How It Works</h2>
-      <ol class="steps">
-        <li>Purchase & complete a short onboarding form</li>
-        <li>We install the full system within 7 days</li>
-        <li>You see recovered revenue within 14 days</li>
-      </ol>
+      <h2>Security & Access</h2>
+      <p>
+        We only request the minimum access required to install and monitor the system.
+        Read-only permissions are used wherever possible.
+      </p>
+      <p>
+        We never store customer data outside approved platforms.
+      </p>
     </div>
   </section>
 
   <!-- GUARANTEE -->
-  <section class="section alt">
+  <section class="section">
     <div class="container">
       <h2>14-Day Revenue Guarantee</h2>
       <p>
-        If you don’t see a measurable increase in recovered revenue within
-        14 days of the system going live, you don’t pay.
+        If you don’t see a measurable increase in recovered revenue within 14 days
+        of the system going live, you don’t pay.
       </p>
       <p class="note">
         Applies to stores with consistent traffic. Not for brand-new stores.
@@ -123,19 +290,21 @@
   </section>
 
   <!-- PRICING -->
-  <section class="section pricing" id="pricing">
+  <section class="section alt pricing" id="pricing">
     <div class="container">
       <h2>One-Time Installation</h2>
       <div class="price-box">
-        <p class="price">$2,000</p>
-        <p class="price-desc">One-time setup</p>
+        <div class="price">$2,000</div>
+        <p class="note">One-time setup</p>
         <ul class="list">
           <li>Full system installation</li>
           <li>14-day monitoring period</li>
           <li>Async email support</li>
         </ul>
         <a href="#" class="btn-primary">Install the System</a>
-        <p class="note">Optional $300/month optimization after setup</p>
+        <p class="note">
+          Optional $300/month optimization after setup
+        </p>
       </div>
     </div>
   </section>
@@ -143,7 +312,12 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>© 2025 – All rights reserved</p>
+      <p>
+        © 2025 RetentionOps ·
+        <a href="#">Privacy</a> ·
+        <a href="#">Terms</a> ·
+        <a href="mailto:support@yourdomain.com">Contact</a>
+      </p>
     </div>
   </footer>
 
